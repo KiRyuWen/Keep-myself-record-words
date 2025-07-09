@@ -1,0 +1,28 @@
+# word:
+#   syn:
+#     - synonym1
+#     - synonym2
+#   ant:
+#     - antonym1
+#   def: definition
+
+dilatory:
+  syn:
+    - procrastinating
+    - tardy
+    - late
+  def:
+    - "拖延的，缓慢的，磨蹭的"
+  example:
+    - "His dilatory approach to work often led to missed deadlines."
+    - "The dilatory response from the government frustrated the citizens."
+
+meow:
+  syn:
+    - purr
+    - miaow
+  def:
+    - "猫叫声，喵喵声"
+  example:
+    - "The cat let out a soft meow when it wanted attention."
+    - "I heard a meow outside my window last night."
