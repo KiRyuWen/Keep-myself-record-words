@@ -1,3 +1,8 @@
+# Word Level
+# Record the words in GRE level
+# To help remember the words, we will use a YAML file to store the words.
+
+# Word formate
 # word:
 #   syn:
 #     - synonym1
@@ -17,12 +22,59 @@ dilatory:
     - "His dilatory approach to work often led to missed deadlines."
     - "The dilatory response from the government frustrated the citizens."
 
-meow:
+dubious:
   syn:
-    - purr
-    - miaow
+    - questionable
+    - equivocal
+    - obscure
+    - hesitant
   def:
-    - "猫叫声，喵喵声"
+    - "可疑的 懷疑的"
   example:
-    - "The cat let out a soft meow when it wanted attention."
-    - "I heard a meow outside my window last night."
+    - "Unsure I'm dubious his promises to change his ways."
+
+commonplace:
+  syn:
+    - prosaic
+    - ordinary
+    - unremarkable
+    - quotidian
+  def:
+    - "平常的 普通的"
+
+trite:
+  syn:
+    - hackneyed
+    - stereotyped
+    - threadbare
+  def:
+    - "平庸的 陳腐的"
+  example:
+    - "This view seems almost trite today, but in the 1960's it was insurgent."
+
+trope:
+  syn:
+    - banality
+    - cliché
+    - bromide
+    - platitude
+  def:
+    - "常用的理念，說法，形象"
+
+humdrum:
+  syn:
+    - monotonous
+  def:
+    - "單調的 乏味的"
+  example:
+    - "The humdrum routine of daily life can sometimes be overwhelming."
+
+pedestrian:
+  syn:
+    - prosaic
+    - commonplace
+    - ordinary
+  def:
+    - "平凡的 普通的"
+  example:
+    - "The pedestrian nature of the lecture made it hard to stay awake."
