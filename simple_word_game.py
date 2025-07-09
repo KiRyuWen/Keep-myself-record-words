@@ -1,72 +1,11 @@
-import yaml
 import os
 import time
-from dataclasses import dataclass
+import yaml
+
+from Word import Word
+from WordBuilder import WordBuilder
 
 
-@dataclass(frozen=True)
-class Word:
-    word: str
-    synonyms: list
-    antonyms: list
-    definition: str
-    example: list
-
-    # def __init__(self, word, synonyms=None, antonyms=None, definition=None, example=None):
-    #     self.word = word
-    #     self.synonyms = synonyms if synonyms else []
-    #     self.antonyms = antonyms if antonyms else []
-    #     self.definition = definition
-    #     self.example = example if example else []
-
-    def __hash__(self):
-        return hash(self.word)
-    def __eq__(self, other):
-        if isinstance(other, Word):
-            return self.word == other.word
-        return False
-
-    def __str__(self):
-        return f"Word: {self.word}, Synonyms: {self.synonyms}, Antonyms: {self.antonyms}, Definition: {self.definition}, Example: {self.example}"
-
-class WordBuilder:
-
-    def __init__(self):
-        self.word = None
-        self.synonyms = []
-        self.antonyms = []
-        self.definition = None
-        self.example = []
-
-    def set_word(self, word):
-        self.word = word
-        return self
-
-    def add_synonym(self, synonym):
-        self.synonyms.append(synonym)
-        return self
-
-    def add_antonym(self, antonym):
-        self.antonyms.append(antonym)
-        return self
-
-    def set_definition(self, definition):
-        self.definition = definition
-        return self
-    def set_example(self, example):
-        self.example.append(example)
-        return self
-
-    def build(self):
-        return Word(self.word, self.synonyms, self.antonyms, self.definition, self.example)
-
-    def reset(self):
-        self.word = None
-        self.synonyms = []
-        self.antonyms = []
-        self.definition = None
-        self.example = []
-        return self
 
 def load_word_list(file_path):
     with open(file_path, 'r') as file:
